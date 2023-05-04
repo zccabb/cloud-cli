@@ -277,6 +277,8 @@ type ResourceListOptions struct {
 	Limit int
 	// Specifies how much data to skip ahead
 	Skip int
+	// Specify the ID of service
+	ServiceID string
 }
 
 // ResourceDeleteOptions contains options for `cloud-cli resource delete` command.
@@ -292,6 +294,8 @@ type ResourceGetOptions struct {
 	Kind string
 	// Specify the ID of resource
 	ID string
+	// Specify the service ID of resource
+	ServiceID string
 }
 
 // Validate validates the docker deploy options.
